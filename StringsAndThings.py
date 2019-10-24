@@ -25,3 +25,26 @@ def rowYourBoat():
     print("Life is but a dream")
 
 rowYourBoat()
+
+#Indexing
+
+name = "Roy G Biv"
+firstChar = name[0]
+print(firstChar)
+middleIndex = len(name) // 2
+print(middleIndex)
+print(name[middleIndex])
+
+print(name[-1])
+
+for i in range(len(name)):
+    print(name[i])
+
+#Slicing and Dicing
+#slicing operator:
+#slicing lets us make substrings
+
+print(name[0:3])
+print(name[:5])
+print(name[6:9])
+print(name[6:])
