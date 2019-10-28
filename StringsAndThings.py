@@ -61,3 +61,25 @@ if "y" in name:
     print("the letter y is in name")
 else:
     print("the letter y is no9t in the name")
+
+    #Strings methods to investigate:
+    #method         use Example     explination
+    #center         aStr.center(w)
+    #ljust          aStr.ljust(w)
+    #rjust          aStr.rjust(w)
+    #upper          aStr.upper()
+    #lower          aStr.index(item)
+    #rindex         aStr.rindex(item)
+    #find           aStr.find(item)
+    #rfind          aStr.rfind(item)
+    #replace        aStr.replace(old, new)
+
+    #be sure to include multiple examples of all of them in use
+
+    # Charecter functions
+
+    print(ord('5'))
+
+    print(chr(97+13))
+
+    print(str(12548))
