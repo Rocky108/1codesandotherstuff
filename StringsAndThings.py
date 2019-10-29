@@ -91,4 +91,8 @@ from mapper import *
 print(lettertoindex('P'))
 print(indextoletter(10))
 
-print(scramble2encrypt())
+from crypto import *
+
+print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
+
+print(scramble2Decrypt("ODMRIGLDE N ETEEGO ONN AISADGNLMN"))
