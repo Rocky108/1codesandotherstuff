@@ -83,3 +83,11 @@ else:
     print(chr(97+13))
 
     print(str(12548))
+
+#testing from mapper
+
+from mapper import *
+
+print(lettertoindex('P'))
+print(indextoletter(10))
+
