@@ -91,3 +91,4 @@ from mapper import *
 print(lettertoindex('P'))
 print(indextoletter(10))
 
+print(scramble2encrypt())
