@@ -30,3 +30,33 @@ def scramble2Decrypt(cipherText):
         plaintext=plaintext+evenChars[-1]
 
     return plaintext
+
+# write a stripSpaces(text) function here
+
+print(scramble2Encrypt("I am here"))
+
+sentence="mhrIa ee"
+print(sentence.replace(" ",""))
+
+
+
+# write a cesarEncrypt(plainText, shift)
+def encrypt(string,shift):
+    cipher=''
+    for char in string:
+        if char==' ':
+            chipher=cipher+char
+        elif (char.isupper()):
+            cipher+=chr((ord(char)+shift-65)%26+65)
+        else:
+            cipher+chr((ord(char)+shift-97)%26+97)
+        return cipher
+text="monmouth college fighting scots"
+s=4
+
+text = input("enter string: ")
+s = int(input("enter shift number: "))
+print("original string: ", text)
+print("after encryption: ", encrypt(text, s))
+
+# write a cesarDecrypt(cipherText, shift)
