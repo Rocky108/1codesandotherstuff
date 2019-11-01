@@ -41,22 +41,21 @@ print(sentence.replace(" ",""))
 
 
 # write a cesarEncrypt(plainText, shift)
-def encrypt(string,shift):
-    cipher=''
-    for char in string:
-        if char==' ':
-            chipher=cipher+char
-        elif (char.isupper()):
-            cipher+=chr((ord(char)+shift-65)%26+65)
-        else:
-            cipher+chr((ord(char)+shift-97)%26+97)
-        return cipher
-text="monmouth college fighting scots"
-s=4
+L2I = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ",range(26)))
+I2L = dict(zip(range(26),"ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
 
-text = input("enter string: ")
-s = int(input("enter shift number: "))
-print("original string: ", text)
-print("after encryption: ", encrypt(text, s))
-
+key = 3
+plaintext = "Monmouth College"
+ciphertext=""
+for c in plaintext.upper():
+    if c.isalpha(): ciphertext+=I2L[(L2I[c]+key)%26]
+    else: ciphertext += c
+print(plaintext)
+print(ciphertext)
 # write a cesarDecrypt(cipherText, shift)
+decoded=""
+for c in ciphertext.upper():
+    if c.isalpha(): decoded += I2L[ (L2I[c]-key)%26]
+    else: decoded += c
+
+print(decoded)
